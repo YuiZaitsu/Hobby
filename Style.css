@@ -1,0 +1,43 @@
+body{
+margin:0;
+padding-top:px
+}
+.Profile{
+width:175px;
+border-radius:30%;
+margin-bottom:50px;
+}
+h1{
+font-size:50;
+line-height:1.2;
+font-weight:300;
+font-family: monospace;
+}
+#Welcome{
+height: 800px;
+color: darkviolet;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+background-color: darkgrey;
+display: table;
+height: 100%;
+width: 100%;
+}
+.Inner{
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+}
+#Bio{
+padding: 50px;
+text-align: center;
+font-size: 42px;
+}
+p{
+font-size: 20px;
+margin: 25px auto;
+max-width: 550px;
+line-height: 1.3;
+}
