@@ -16,12 +16,12 @@ font-family: monospace;
 }
 #Welcome{
 height: 800px;
-color: darkviolet;
+color: ;
 left: 0;
 right: 0;
 bottom: 0;
 top: 0;
-background-color: darkgrey;
+background-color:darkslateblue;
 display: table;
 height: 100%;
 width: 100%;
@@ -44,7 +44,7 @@ line-height: 1.3;
 }
 .Menu{
 position: fixed;
-background-color: crimson;
+background-color: slategrey;
 width:100%;
 top:0px;
 z-index: 10;
@@ -63,7 +63,7 @@ list-style:none;
 }
 .Link:hover{
 font-size: 30px;
-background-color: cornflowerblue;
+background-color: skyblue;
 text-decoration: underline;
 }
 .Link a{
