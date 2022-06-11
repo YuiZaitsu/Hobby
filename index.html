@@ -1,62 +1,55 @@
- 
 <html>
-  <head>
-    <title>Image recognition</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>My Selfie App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="Style.css" rel="stylesheet">
 
-   <link rel="stylesheet" href="style.css">
-   <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank">
-   </script>
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
 
-  <body>
-  <div class="container">
-    
+</head>
+
+<body>
     <center>
-<h1 class="btn btn-default heading">ADV-C104: FACE RECOGNITION WEB APP - 2</h1>
-      <br><br>
+        <h1>Collage Web App </h1>
+        <hr>
+        <h4>Please press allow as soon as popup comes. After you give a voice command</h4>
 
-      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
-<p class="name_of_objects">
-  Me
-  <br>
-  <br>
-  Sister
-  <br>
-  <br>
-  
+        <h3>Say "selfie" for Taking your selfie to make a Collage</h3>
 
+        <button class="btn btn-lg btn-primary" onclick="start()">Start</button>
+        <h4>Press the Start button</h4>
 
-</p>
-      <label>Webcam View - </label>
-<div id="camera">
+        <label>Your webcam : </label>
+        <div id="camera"></div>
 
-</div>
-      <br><br>
-<div id="result">
+        <br>
 
-</div>
-      <br><br>
-<button class="btn btn-primary" onclick="take_snapshot()">Capture Image</button>
-      <br><br>
-      <button class="btn btn-danger" onclick="check()">Identify Image</button>
+        <label>Your selife Will Display Here: </label>
+        <br>
+        <div id="resultRow">
+            <div id="result1" class="column">
+               
+            </div>
 
-      <br><br>
+            <div id="result2" class="column">
+              
+            </div>
 
-      <p style="font-size: 22px;">Object :<span id="result_object_name"></span> </p>
-
-      <p style="font-size: 22px;">Accuracy :<span id="result_object_accuracy"></span>  </p>
+            <div id="result3" class="column">
+              
+            </div>
+        </div>
     </center>
 
-  </div>
-<script src="main.js"></script>
+    <div class="copy_right_footer">
+        Developed by - Peter
+      </div>
+    <script src="Main.js"></script>
+</body>
 
-  </body>
 </html>
-
- 
