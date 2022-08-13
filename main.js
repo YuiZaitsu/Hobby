@@ -1,44 +1,33 @@
-Webcam.set({
-width:350,
-height:300,
-image_format:"png",
-png_quality:90
-});
-camera = document.getElementById("camera");
-Webcam.attach("#camera");
+function preload(){
+
+}
+
+function setup() {
+canvas= createCanvas(600,500);
+canvas.position(100,250);
+video=createCapture(VIDEO);
+video.hide();
+tint_color="";
+}
+
+function draw() {
+    image(video,100,80,300,250   );
+
+    circle(40,40,50);
+    circle(460,40,50);
+    circle(40,360,50);
+    circle(460,360,50);
+
+    rect(70, 27, 375, 25);
+    rect(70, 350, 375, 25);
+    rect(30, 63, 25, 275);
+    rect(448, 63, 25, 275);
+
+     
+}
+
 
 function take_snapshot() {
-Webcam.snap(function(data_uri){
-document.getElementById("result").innerHTML = "<img src = '"+ data_uri +"' id='captured_Image'>";
-});
-}
+    save("");
+    }
 
-console.log("ml5version", ml5.version);
-classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/DB38ViBtJ/model.json",modelLoaded);
-
-
-function modelLoaded(){
-console.log("modelLoaded");
-}
-
-function check()
- {
-var img  = document.getElementById("captured_Image");
-classifier.classify(img,gotresult);
-
-}
-
-function gotresult(error,results) {
-if(error){
-console.log(error);
-}
-else{
-console.log(results);
-document.getElementById("result_object_name").innerHTML = results[0].label;
-
-document.getElementById("result_object_accuracy").innerHTML = results[0].confidence.toFixed(2);
-
-}
-
-
-}
