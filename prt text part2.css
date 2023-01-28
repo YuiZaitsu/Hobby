@@ -8,7 +8,7 @@
     .header{
         width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(8f7a2a4da30ea7f53a3b1e0462d2eb25.png);
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(ho.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -80,10 +80,23 @@
     margin-top: 30px;
     margin-bottom: 20px;
     }
+ 
+    #hello{
+        text-align: center;
+
+    }
 
     .container{
-        color: black;
+        color: lightgoldenrodyellow;
         text-align: center;
         text-decoration: wavy;
-         font: oblique;
+         font: bolder;
+         text-decoration-line:initial;
+         font-size: 25px;
     }
+    
+    #hello{
+        text-align: center;
+    }
+
+    
